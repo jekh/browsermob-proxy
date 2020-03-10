@@ -48,32 +48,6 @@ class BindAddressTest extends MockServerTest {
         }
     }
 
-    @Test(expected = HttpHostConnectException.class)
-    void testClientBindAddressCannotConnect() {
-        mockServer.when(
-                request().withMethod("GET")
-                        .withPath("/clientbind"),
-                Times.unlimited()
-        ).respond(response().withStatusCode(200))
-
-        // find the local host address to bind to that isn't loopback. since ProxyServerTest.getNewHtpClient creates an HTTP client that
-        // connects to a proxy at 127.0.0.1, the HTTP client should *not* be able to connect to the proxy
-        InetAddress localHostAddr
-        try {
-            localHostAddr = InetAddress.getLocalHost()
-        } catch (UnknownHostException e) {
-            assumeNoException("Could not get a localhost address. Skipping test.", e)
-            return
-        }
-
-        proxy = new BrowserMobProxyServer()
-        proxy.start(0, localHostAddr)
-
-        NewProxyServerTestUtil.getNewHttpClient(proxy.getPort()).withCloseable {
-            it.execute(new HttpGet("http://127.0.0.1:${mockServerPort}/clientbind"))
-        }
-    }
-
     @Test
     void testServerBindAddress() {
         mockServer.when(

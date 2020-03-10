@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * An {@link net.lightbody.bmp.proxy.dns.AdvancedHostResolver} that provides native JVM lookup using {@link net.lightbody.bmp.proxy.dns.NativeResolver}
  * but also implements DNS cache manipulation functionality.
- * <p/>
+ * <p>
  * <b>Important note:</b> The Oracle JVM does not provide any public facility to manipulate the JVM's DNS cache. This class uses reflection to forcibly
  * manipulate the cache, which includes access to private class members that are not part of the published Java specification. As such, this
  * implementation is brittle and may break in a future Java release, or may not work on non-Oracle JVMs. If this implementation cannot

@@ -54,7 +54,7 @@ import java.util.Set;
 /**
  * Proxy request handler. A HTTP/1.1 Proxy. This implementation uses the JVMs URL implementation to
  * make proxy requests.
- * <p/>
+ * <p>
  * The HttpTunnel mechanism is also used to implement the CONNECT method.
  *
  * @author Greg Wilkins (gregw)

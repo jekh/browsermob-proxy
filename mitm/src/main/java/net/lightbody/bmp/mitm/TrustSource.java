@@ -22,14 +22,14 @@ import java.util.List;
  *
  * Custom TrustSources can be built by starting with {@link #empty()}, then calling the various add() methods to add
  * PEM-encoded files and Strings, KeyStores, and X509Certificates to the TrustSource. For example:
- * <p/>
+ * <p>
  * <code>
  *      TrustSource customTrustSource = TrustSource.empty()
  *              .add(myX509Certificate)
  *              .add(pemFileContainingMyCA)
  *              .add(javaKeyStore);
  * </code>
- * <p/>
+ * <p>
  * <b>Note:</b> This class is immutable, so calls to add() will return a new instance, rather than modifying the existing instance.
  */
 public class TrustSource {

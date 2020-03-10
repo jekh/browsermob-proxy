@@ -18,7 +18,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 /**
  * Local server for unit tests. The start() method wires up simple servlets to be used for unit testing. Static resources are served from the
  * classpath at /local-server. By default, no content will be gzipped; call forceGzip() to force gzipping content.
- * <p/>
+ * <p>
  * <b>Note:</b> Call getPort() <b>after</b> calling start() to get the port the server is bound to.
  */
 public class LocalServer {

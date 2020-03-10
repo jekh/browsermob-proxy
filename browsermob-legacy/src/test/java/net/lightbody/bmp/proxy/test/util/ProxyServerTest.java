@@ -23,7 +23,7 @@ import java.nio.charset.StandardCharsets;
 /**
  * Extend this class to gain access to a local proxy server. If you need both a local proxy server and a local Jetty server, extend
  * {@link net.lightbody.bmp.proxy.test.util.LocalServerTest} instead.
- * <p/>
+ * <p>
  * Call getNewHttpClient() to get an HttpClient that can be used to make requests via the local proxy.
  */
 public abstract class ProxyServerTest {

@@ -20,9 +20,9 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * {@link #remapHost(String, String)}, the call to {@link #resolve(String)} is guaranteed to
  * apply the newly-remapped hosts to <i>all</i> resolvers managed by this ChainedHostResolver, or to <i>no</i> resolvers, but the call to
  * {@link #resolve(String)} will never result in the host name remappings applied only to "some" of the chained resolvers.
- * <p/>
+ * <p>
  * For getter methods (all read-only methods except {@link #resolve(String)}), the ChainedHostResolver returns results from the first chained resolver.
- * <p/>
+ * <p>
  * The atomic write methods specified by AdvancedHostResolver are:
  * <ul>
  *     <li>{@link net.lightbody.bmp.proxy.dns.AdvancedHostResolver#remapHost(String, String)}</li>

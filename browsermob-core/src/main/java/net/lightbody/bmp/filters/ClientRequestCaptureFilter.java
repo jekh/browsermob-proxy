@@ -16,7 +16,7 @@ import java.io.IOException;
 
 /**
  * This filter captures requests from the client (headers and content).
- * <p/>
+ * <p>
  * The filter can be used in one of three ways: (1) directly, by adding the filter to the filter chain; (2) by subclassing
  * the filter and overriding its filter methods; or (3) by invoking the filter directly from within another filter (see
  * {@link net.lightbody.bmp.filters.HarCaptureFilter} for an example of the latter).

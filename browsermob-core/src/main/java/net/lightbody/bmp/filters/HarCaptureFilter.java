@@ -120,7 +120,7 @@ public class HarCaptureFilter extends HttpsAwareFiltersAdapter {
     /**
      * Create a new instance of the HarCaptureFilter that will capture request and response information. If no har is specified in the
      * constructor, this filter will do nothing.
-     * <p/>
+     * <p>
      * Regardless of the CaptureTypes specified in <code>dataToCapture</code>, the HarCaptureFilter will always capture:
      * <ul>
      *     <li>Request and response sizes</li>

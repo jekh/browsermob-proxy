@@ -5,7 +5,7 @@ import org.junit.Before;
 
 /**
  * Extend this class to gain access to a local Jetty server and a local Proxy server.
- * <p/>
+ * <p>
  * Call getLocalServerHostnameAndPort() to retrieve an string that can be used to make HTTP requests to the local server.
  */
 public abstract class LocalServerTest extends ProxyServerTest {

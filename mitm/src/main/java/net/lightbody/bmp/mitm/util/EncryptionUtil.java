@@ -24,7 +24,7 @@ public class EncryptionUtil {
      * Creates a signature algorithm string using the specified message digest and the encryption type corresponding
      * to the supplied signingKey. Useful when generating the signature algorithm to be used to sign server certificates
      * using the CA root certificate's signingKey.
-     * <p/>
+     * <p>
      * For example, if the root certificate has an RSA private key, and you
      * wish to use the SHA256 message digest, this method will return the string "SHA256withRSA". See the
      * "Signature Algorithms" section of http://docs.oracle.com/javase/7/docs/technotes/guides/security/StandardNames.html
